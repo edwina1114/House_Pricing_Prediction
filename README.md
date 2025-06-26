@@ -15,7 +15,7 @@ The process is documented in two Jupyter Notebooks:
 ---
 ## 🚀 Live Demo
 🖥️ Explore the interactive dashboard and in-depth insights:
-[🔗 Streamlit Live Demo](https://edwina1114-house-pricing-prediction-apphome-3qkfna.streamlit.app/)
+[🔗 Streamlit Live Demo](https://edwina1114-house-pricing-prediction-apphome-vcizvx.streamlit.app/)
 
 The Streamlit app includes:
 
