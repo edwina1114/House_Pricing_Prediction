@@ -3,7 +3,7 @@ from PIL import Image
 
 
 def get_data(filename: str) -> Path:
-    project_root = Path(__file__).resolve().parents[1]
+    project_root = Path(__file__).resolve().parents[2]
     data_path = project_root / "data" / filename
     return data_path
 
