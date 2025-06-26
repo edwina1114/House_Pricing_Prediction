@@ -51,7 +51,7 @@ with tab1:
     )
 
     st.image(
-        get_image("MODEL", "Pipeline.png"),
+        get_image("MODEL", "pipeline.png"),
         use_container_width=True,
     )
 
