@@ -64,30 +64,15 @@ Key steps and insights from [02_complete_modeling.ipynb](notebooks/02_complete_m
     - **R² Score**
     - **Overfitting Gap (%)** = Train R² − Valid R²
 
-> 📊 Visual summary of model comparison:  
-> ![Model Comparison](images/MODEL/model_comparison_results.png)
-
----
-
 ### ✅ Final Model Selection: Lasso Regression
 
 - Balanced performance: low MAE (~17,139), high R² (~0.912), and lowest overfitting gap (~12%)
 - Built-in **feature selection** improved generalization and simplified model structure
 
-> 📉 Residual & prediction comparison across models:  
-> ![Residuals vs Predictions](images/MODEL/residuals_vs_predicted_comparison_across_models.png)
-
----
-
 ### 🔎 Feature Selection with Lasso
 
 - Retained **76 out of 220 features (34.5%)** without loss in performance  
 - Achieved a **2.9x compression ratio** while maintaining MAE and R²
-
-> 🧠 Top 20 influential features from Lasso:  
-> ![Lasso Top 20 Features](images/MODEL/top20_features_from_lasso.png)
-
----
 
 ### 📈 Performance Before vs After Feature Selection
 
@@ -97,9 +82,6 @@ Key steps and insights from [02_complete_modeling.ipynb](notebooks/02_complete_m
 | R²     | 0.9120 | 0.9120 |
 | Retained Features | 220 | 76 |
 
-> 📊 Comparison of model performance before and after feature selection:  
-> ![Before vs After](images/MODEL/model_performance_before_after_feature_selection.png)
-
 ---
 
 ## 🛠️ Tech Stack
@@ -108,7 +90,6 @@ Key steps and insights from [02_complete_modeling.ipynb](notebooks/02_complete_m
 - **Modeling & Evaluation**: `Scikit-learn` (`Pipeline`, `GridSearchCV`, `LassoCV`, `RidgeCV`, `SelectFromModel`, `TransformedTargetRegressor`), `XGBoost`
 - **Visualization**: `Matplotlib`, `Seaborn`, `Plotly (express & graph_objects)`
 - **Environment**: `Jupyter Notebook`
-
 
 ---
 
