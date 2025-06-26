@@ -65,7 +65,7 @@ Key steps and insights from [02_complete_modeling.ipynb](notebooks/02_complete_m
     - **Overfitting Gap (%)** = Train R² − Valid R²
 
 > 📊 Visual summary of model comparison:  
-> ![Model Comparison](images/Model/model_comparison_results.png)
+> ![Model Comparison](images/MODEL/model_comparison_results.png)
 
 ---
 
@@ -75,7 +75,7 @@ Key steps and insights from [02_complete_modeling.ipynb](notebooks/02_complete_m
 - Built-in **feature selection** improved generalization and simplified model structure
 
 > 📉 Residual & prediction comparison across models:  
-> ![Residuals vs Predictions](images/Model/residuals_vs_predicted_comparison_across_models.png)
+> ![Residuals vs Predictions](images/MODEL/residuals_vs_predicted_comparison_across_models.png)
 
 ---
 
@@ -85,7 +85,7 @@ Key steps and insights from [02_complete_modeling.ipynb](notebooks/02_complete_m
 - Achieved a **2.9x compression ratio** while maintaining MAE and R²
 
 > 🧠 Top 20 influential features from Lasso:  
-> ![Lasso Top 20 Features](images/Model/top20_features_from_lasso.png)
+> ![Lasso Top 20 Features](images/MODEL/top20_features_from_lasso.png)
 
 ---
 
@@ -98,7 +98,7 @@ Key steps and insights from [02_complete_modeling.ipynb](notebooks/02_complete_m
 | Retained Features | 220 | 76 |
 
 > 📊 Comparison of model performance before and after feature selection:  
-> ![Before vs After](images/Model/model_performance_before_after_feature_selection.png)
+> ![Before vs After](images/MODEL/model_performance_before_after_feature_selection.png)
 
 ---
 
