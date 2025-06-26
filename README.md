@@ -48,52 +48,69 @@ Key insights from [01_eda_insights.ipynb](notebooks/01_eda_insights.ipynb):
 
 ## 🧪 Modeling Pipeline
 
-Key steps and insights from [02_complete_modeling.ipynb](notebooks/02_complete_modeling.ipynb):
+📌 Key steps from `02_complete_modeling.ipynb`:
 
-- 🧹 **Data Preprocessing**
-  - Built custom transformers based on EDA findings:
-    - Ordinal + Binary Indicators for quality-related features (e.g., `PoolQC`, `FireplaceQu`)
-    - Binary indicators for sparse categorical features (e.g., `Alley`, `Fence`)
-    - Frequency encoding for high-cardinality features (`Neighborhood`, `Exterior1st`, `Exterior2nd`)
-  - Combined all pipelines using `ColumnTransformer`
+### 🧹 Data Preprocessing
+- Ordinal + Binary indicators for quality-related features (`PoolQC`, `FireplaceQu`)
+- Binary indicators for sparse features (`Alley`, `Fence`)
+- Frequency encoding for high-cardinality features (`Neighborhood`, `Exterior1st`)
+- Combined all pipelines via `ColumnTransformer`
 
-- 🧪 **Modeling & Evaluation**
-  - Compared five models: `Linear`, `Ridge`, `Lasso`, `Random Forest`, and `XGBoost`
-  - Evaluation metrics included:
-    - **MAE** (Mean Absolute Error)
-    - **R² Score**
-    - **Overfitting Gap (%)** = Train R² − Valid R²
+---
 
-### ✅ Final Model Selection: Lasso Regression
+## 📈 Modeling & Evaluation
 
-- Balanced performance: low MAE (~17,139), high R² (~0.912), and lowest overfitting gap (~12%)
-- Built-in **feature selection** improved generalization and simplified model structure
+🧪 Compared models:  
+- Linear Regression  
+- Ridge Regression  
+- Lasso Regression  
+- Random Forest  
+- XGBoost
 
-### 🔎 Feature Selection with Lasso
+📏 Metrics used:  
+- **MAE** (Mean Absolute Error)  
+- **R² Score**  
+- **Overfitting Gap (%)** = Train R² − Validation R²
 
-- Retained **76 out of 220 features (34.5%)** without loss in performance  
-- Achieved a **2.9x compression ratio** while maintaining MAE and R²
+---
 
-### 📈 Performance Before vs After Feature Selection
+## ✅ Final Model: Lasso Regression
 
-| Metric | Before | After |
-|--------|--------|-------|
-| MAE    | 17,139 | 17,139 |
-| R²     | 0.9120 | 0.9120 |
-| Retained Features | 220 | 76 |
+- 🏆 Balanced: MAE ≈ 17,139, R² ≈ 0.912, gap ≈ 12%  
+- ⚙️ Built-in feature selection improved generalization
+
+---
+
+## 🔎 Feature Selection with Lasso
+
+- ✅ Retained **76 / 220 features (34.5%)**  
+- 📉 Achieved **2.9× compression ratio**  
+- 🔧 No drop in performance
+
+---
+
+## 📊 Performance Before vs After Feature Selection
+
+| Metric            | Before | After |
+|-------------------|--------|-------|
+| MAE               | 17,139 | 17,139 |
+| R² Score          | 0.9120 | 0.9120 |
+| Retained Features | 220    | 76     |
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Programming & Data Manipulation**: `Python`, `Pandas`, `NumPy`
-- **Modeling & Evaluation**: `Scikit-learn` (`Pipeline`, `GridSearchCV`, `LassoCV`, `RidgeCV`, `SelectFromModel`, `TransformedTargetRegressor`), `XGBoost`
-- **Visualization**: `Matplotlib`, `Seaborn`, `Plotly (express & graph_objects)`
-- **Environment**: `Jupyter Notebook`
+- **Programming**: Python  
+- **Libraries**:  
+  - `pandas`, `numpy` for data processing  
+  - `matplotlib`, `seaborn`, `plotly` for visualization  
+  - `scikit-learn`, `xgboost` for modeling  
+  - `streamlit` for app deployment
 
 ---
 
-## 📁 File Structure
+## 📁 Project Structure
 ```
 HOUSE_PRICING_PREDICTION/
 ├── app/                       # Streamlit app and supporting utils
