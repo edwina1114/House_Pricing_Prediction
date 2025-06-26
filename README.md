@@ -125,7 +125,7 @@ HOUSE_PRICING_PREDICTION/
 │ └── test.csv
 ├── images/ # All result plots and visualizations
 │ ├── EDA/ # Visualizations from exploratory analysis
-│ └── Model/ # Model performance plots
+│ └── MODEL/ # Model performance plots
 ├── notebooks/ 
 │ ├── 01_eda_insights.ipynb # EDA and feature analysis
 │ └── 02_complete_modeling.ipynb # Modeling and evaluation pipeline
@@ -136,15 +136,9 @@ HOUSE_PRICING_PREDICTION/
 
 ## 🚀 Streamlit - How to Run Locally
 
-### ▶️ Option 1: Pip (recommended for Streamlit Cloud)
+### ▶️ Pip 
 ```bash
 pip install -r requirements.txt
 streamlit run app/Home.py
 ```
 
-### ▶️ Option 2: With conda
-```bash
-conda env create -f environment.yml
-conda activate streamlit_practice
-streamlit run app/Home.py
-```
