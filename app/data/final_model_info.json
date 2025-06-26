@@ -1,0 +1,9 @@
+{
+    "original_r2": 0.911962603071603,
+    "selected_r2": 0.9119599884398266,
+    "original_mae": 17139.267529669276,
+    "selected_mae": 17139.18849952431,
+    "score_change": -2.6146317764208504e-06,
+    "performance_retention": 99.99971329616285,
+    "features_removed": 144
+}
