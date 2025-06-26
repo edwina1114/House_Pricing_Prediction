@@ -29,7 +29,7 @@ with tab1:
     st.image(
         get_image("EDA", "target_distribution_log.png"),
         caption="Log-Transformed Distribution of SalePrice",
-        use_column_width=True,
+        use_container_width=True,
     )
 
 with tab2:
@@ -84,7 +84,7 @@ with tab2:
     st.image(
         get_image("EDA", "box_count_missing_features.png"),
         caption="Box and Count Plots of Features with Missing Values",
-        use_column_width=True,
+        use_container_width=True,
     )
 
 with tab3:

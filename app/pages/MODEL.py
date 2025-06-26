@@ -50,8 +50,10 @@ with tab1:
         """
     )
 
-    st.image("/Users/edwina/Desktop/House_Pricing_Prediction/app/Pipeline.png")
-
+    st.image(
+        get_image("MODEL", "Pipeline.png"),
+        use_container_width=True,
+    )
 
 with tab2:
     st.subheader("📈 Model Overview")
