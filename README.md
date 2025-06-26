@@ -26,6 +26,14 @@ The Streamlit app includes:
 - 🧠 Feature selection insights
 
 - 📊 Dynamic charts and metrics
+
+📌 注意事項 / Wake-up Notice
+
+💤 Streamlit App May Sleep After Inactivity
+
+If the app shows “This app has gone to sleep due to inactivity”, simply click “Wake it back up” and wait a few seconds for it to reload.
+
+若出現「This app has gone to sleep」訊息，請點選 Wake it back up 即可重新啟動網站（等待數秒載入）。這是 Streamlit 免費平台的自動休眠機制。
   
 ---
 
