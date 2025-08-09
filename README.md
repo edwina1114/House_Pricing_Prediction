@@ -56,7 +56,7 @@ Key insights from [01_eda_insights.ipynb](notebooks/01_eda_insights.ipynb):
 
 ## 🧪 Modeling Pipeline
 
-📌 Key steps from `02_complete_modeling.ipynb`:
+📌 Key steps from [02_complete_modeling.ipynb](notebooks/02_complete_modeling.ipynb):
 
 ### 🧹 Data Preprocessing
 - Ordinal + Binary indicators for quality-related features (`PoolQC`, `FireplaceQu`)
