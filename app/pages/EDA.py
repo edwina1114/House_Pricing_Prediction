@@ -42,6 +42,12 @@ with tab2:
         """
     )
 
+    st.image(
+        get_image("EDA", "box_count_missing_features.png"),
+        caption="Box and Count Plots of Features with Missing Values",
+        use_container_width=True,
+    )
+
     st.markdown("#### ✅ 1. Features with Quality Levels")
     st.markdown(
         """
@@ -79,13 +85,6 @@ with tab2:
         """
     )
 
-    st.divider()
-
-    st.image(
-        get_image("EDA", "box_count_missing_features.png"),
-        caption="Box and Count Plots of Features with Missing Values",
-        use_container_width=True,
-    )
 
 with tab3:
     st.subheader("📊 Correlation with SalePrice")
